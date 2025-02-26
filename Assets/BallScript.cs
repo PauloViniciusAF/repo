@@ -18,6 +18,11 @@ public class BallScript : MonoBehaviour
             Destroy(coll.gameObject); 
             source.Play(); 
         }
+        if (coll.gameObject.tag == "BrickPowerUp"){
+            Destroy(coll.gameObject); 
+            source.Play(); 
+            
+        }
         if (coll.gameObject.tag == "Bottom"){
             RestartGame();  
         }
